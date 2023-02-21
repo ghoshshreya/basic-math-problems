@@ -4,8 +4,9 @@ var isArmstrong = function (num) {
   let sum = 0;
   for (let x of numArr) {
     sum = sum + Math.pow(Number(x), len);
-    console.log(sum);
   }
+  return sum === num;
 };
 
-isArmstrong(123);
+console.log(isArmstrong(153));
+console.log(isArmstrong(170));
