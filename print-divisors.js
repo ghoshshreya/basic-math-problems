@@ -1,11 +1,12 @@
 const printDivisors = function (num) {
-  console.log('Hllo');
-  for (let x = num; x > 0; x++) {
+  let divisors = [];
+  for (let x = 1; x <= num; x++) {
     if (num % x === 0) {
-      console.log(num);
+      divisors.push(x);
     }
   }
+  return divisors;
 };
 
-console.log('Hello');
-printDivisors(36);
+console.log(printDivisors(17));
+console.log(printDivisors(36));
