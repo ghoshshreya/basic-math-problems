@@ -1,8 +1,11 @@
 var isArmstrong = function (num) {
   let numArr = num.toString().split('');
-  console.log(numArr);
+  let len = numArr.length;
+  let sum = 0;
+  for (let x of numArr) {
+    sum = sum + Math.pow(Number(x), len);
+    console.log(sum);
+  }
 };
 
 isArmstrong(123);
-
-// 1 + 8 + 27 = 36
